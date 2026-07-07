@@ -1,0 +1,177 @@
+/* ============================================================
+   Design System - Typography
+   ============================================================ */
+
+:root {
+  /* Font Family */
+  --font-family-base: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+
+  /* Font Size Scale */
+  --font-size-xs: 12px;
+  --font-size-md: 15px; /* 바디 기본 폰트 크기 */
+  --font-size-base: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+
+  /* Font Weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Color */
+  --color-primary-50: #f5f9ff;
+  --color-primary-100: #f2f6ff;
+  --color-primary-150: #eaf1ff;
+  --color-primary-200: #bcd4f2;
+  --color-primary-300: #a9c6f0;
+  --color-primary-400: #5b9bff;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #377efc;
+  --color-primary-650: #3b6fed;
+  --color-primary-700: #3b5bfd;
+  --color-primary-800: #2f6fed;
+  --color-primary-900: #2f5fd6;
+  --color-primary-950: #2a4a8c;
+  --color-navy: #1b2740;
+  --color-primary: var(--color-primary-500);
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f2f3f5;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d9dce1;
+  --color-gray-400: #999;
+  --color-gray-500: #888;
+  --color-gray-600: #777;
+  --color-gray-700: #666;
+  --color-gray-800: #555;
+  --color-gray-900: #333;
+  --color-gray-950: #111;
+
+  /* Line Height */
+  --line-height-base: 1.5;
+
+  /* Layout */
+  --layout-max-width: none;   /* 전체 화면 최대 너비. 1920px로 다시 가두려면 1920px으로 변경 */
+
+  /* Button */
+  --btn-height: 34px;
+  --btn-height-sm: 28px;
+  --btn-padding-x: 12px;
+  --btn-gap: 4px;
+  --btn-radius: 6px;
+  --btn-font-size: var(--font-size-md);
+
+  /* Icon Size (RemixIcon <i> 태그 font-size 스케일) */
+  --icon-size-xs: 14px;
+  --icon-size-sm: 16px;
+  --icon-size-md: 18px;
+  --icon-size-lg: 20px;
+  --icon-size-xl: 24px;
+
+  /* Dropdown */
+  --dropdown-radius: 4px;
+  --dropdown-min-width: 110px;
+}
+
+html,
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+}
+
+/* ============================================================
+   Design System - Button
+   기본 버튼 컴포넌트. 서브 페이지에서도 이 클래스만 갖다 쓰면 됨.
+   사용법: <button class="btn btn--secondary">등록</button>
+          <button class="btn btn--primary"><i class="..."></i>저장</button>
+          <button class="btn btn--icon"><i class="..."></i></button>
+   ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--btn-gap);
+  height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
+  border: 1px solid transparent;
+  border-radius: var(--btn-radius);
+  font-family: var(--font-family-base);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+
+.btn--sm { height: var(--btn-height-sm); padding: 0 10px; font-size: var(--font-size-xs); }
+.btn--wide { min-width: 120px; }
+
+/* 흰 배경 + 테두리 + 파란 텍스트 (현재 등록/작업현황/전년도보기 버튼) */
+.btn--secondary { background: #fff; border-color: var(--color-primary-300); color: var(--color-primary); }
+.btn--secondary:hover { background: var(--color-primary-100); }
+.btn--secondary i { color: var(--color-primary); font-size: 14px; }
+
+/* 채워진 파란 배경 (강조 액션용) */
+.btn--primary { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+.btn--primary:hover { background: var(--color-primary-800); }
+
+/* 테두리/배경 없는 텍스트형 */
+.btn--ghost { background: transparent; border-color: transparent; color: var(--color-gray-800); }
+.btn--ghost:hover { background: var(--color-gray-100); }
+
+/* 아이콘 전용 (정사각형) */
+.btn--icon { width: var(--btn-height); padding: 0; font-size: var(--icon-size-md); }
+.btn--icon.btn--sm { width: var(--btn-height-sm); }
+
+/* 네비게이션(LNB) 전용 변형 — 높이/폰트/커서 등 기본기는 .btn과 동일하고
+   배지형 radius(2px)와 진한 남색 계열 컬러만 다름.
+   사용법: <button class="btn btn--nav btn--nav-all">전체</button>
+          <button class="btn btn--nav btn--nav-favorite"><i class="ri-star-fill icon-sm"></i>즐겨찾기</button>
+          <button class="btn btn--nav btn--nav-settings"><i class="ri-settings-3-line icon-lg"></i></button> */
+.btn--nav { border-radius: 2px; font-weight: var(--font-weight-regular); justify-content: center; }
+.btn--nav-all { background: #4a7bd1; color: #fff; }
+.btn--nav-favorite { background: #1b35a2; color: #fff; }
+.btn--nav-favorite i { color: #f5c518; }
+.btn--nav-settings { background: #132b90; color: #fff; padding: 0; }
+
+/* ============================================================
+   Design System - Icon
+   RemixIcon <i> 태그 크기. 아이콘을 쓸 때는 font-size를 직접 정하지 말고
+   아래 클래스 중 하나를 붙여서 스케일을 통일할 것.
+   사용법: <i class="ri-star-line icon-md"></i>
+   ============================================================ */
+
+.icon-xs { font-size: var(--icon-size-xs); }
+.icon-sm { font-size: var(--icon-size-sm); }
+.icon-md { font-size: var(--icon-size-md); }
+.icon-lg { font-size: var(--icon-size-lg); }
+.icon-xl { font-size: var(--icon-size-xl); }
+
+/* ============================================================
+   Design System - Dropdown
+   드롭다운(선택 목록) 공통 컴포넌트. 트리거 엘리먼트에 .dropdown, 트리거 안의
+   클릭 대상에 .select-box, 펼쳐지는 목록에 .dropdown-menu를 붙여서 사용.
+   ============================================================ */
+
+.dropdown { position: relative; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: var(--dropdown-min-width);
+  background: #fff;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--dropdown-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 4px 0;
+  z-index: 100;
+}
+.dropdown.open .dropdown-menu { display: block; }
+.dropdown-menu li { padding: 9px 14px; font-size: var(--font-size-md); color: var(--color-gray-900); cursor: pointer; }
+.dropdown-menu li:hover { background: var(--color-gray-100); }
+.dropdown-menu li.active { background: var(--color-primary-150); color: var(--color-primary-950); font-weight: var(--font-weight-bold); }

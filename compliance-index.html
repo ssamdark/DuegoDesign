@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이행 현황(INDEX)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="design-system.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- LNB : 고정 250px -->
+  <nav class="lnb">
+    <div class="lnb-logo">
+      <a href="index.html"><img class="lnb-logo-img" src="img/logo_header_white.png" alt="동국씨엠"></a>
+      <button class="lnb-toggle" id="lnbToggle" type="button"><img src="img/iocn_left.png" alt="메뉴 접기"></button>
+    </div>
+    <div class="lnb-tabbar">
+      <button class="btn btn--nav btn--nav-all">전체</button>
+      <div class="lnb-tab-group">
+        <button class="btn btn--nav btn--nav-favorite"><i class="ri-star-fill icon-sm"></i>즐겨찾기</button>
+        <button class="btn btn--nav btn--nav-settings"><i class="ri-settings-3-line icon-lg"></i></button>
+      </div>
+    </div>
+    <ul class="lnb-menu">
+      <li><a href="index.html"><i class="icon ri-share-box-line"></i><span class="lnb-text">공지사항</span></a></li>
+      <li><a href="#"><i class="icon ri-headphone-line"></i><span class="lnb-text">QnA 게시판</span></a></li>
+      <li><a href="#"><i class="icon ri-layout-left-line"></i><span class="lnb-text">안전보건체계문서</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li class="lnb-has-sub open">
+        <a href="#" class="lnb-sub-toggle"><i class="icon ri-file-text-line"></i><span class="lnb-text">중대재해처벌법 이행</span><i class="chevron ri-arrow-down-s-line"></i></a>
+        <ul class="lnb-submenu">
+          <li class="active"><a href="compliance-index.html">이행 현황(INDEX)</a></li>
+          <li><a href="#">안전보건경영방침<i class="chevron ri-arrow-down-s-line"></i></a></li>
+          <li><a href="#">안전보건관리조직<i class="chevron ri-arrow-down-s-line"></i></a></li>
+          <li><a href="#">안전보건예산관리<i class="chevron ri-arrow-down-s-line"></i></a></li>
+          <li><a href="#">안전보건인력 평가<i class="chevron ri-arrow-down-s-line"></i></a></li>
+          <li><a href="#">법규등록 및 준수평가<i class="chevron ri-arrow-down-s-line"></i></a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="icon ri-alert-line"></i><span class="lnb-text">재해·사고 관리</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-calendar-check-line"></i><span class="lnb-text">공사업체 출입관리</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-shield-flash-line"></i><span class="lnb-text">안전작업허가</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-clipboard-line"></i><span class="lnb-text">안전작업표준</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-alarm-warning-line"></i><span class="lnb-text">위험성평가</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-bar-chart-2-line"></i><span class="lnb-text">도급관리</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-newspaper-line"></i><span class="lnb-text">안전신문고</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-team-line"></i><span class="lnb-text">산업안전보건위원회</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-book-open-line"></i><span class="lnb-text">교육관리</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-shield-user-line"></i><span class="lnb-text">안전점검</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-history-line"></i><span class="lnb-text">시정조치</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-refresh-line"></i><span class="lnb-text">PSM</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-file-search-line"></i><span class="lnb-text">안전검사</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-flask-line"></i><span class="lnb-text">화학물질</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-hospital-line"></i><span class="lnb-text">보건관리</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-earth-line"></i><span class="lnb-text">환경관리</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><i class="icon ri-table-line"></i><span class="lnb-text">시스템 설정</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+      <li><a href="#"><span class="lnb-text">미사용 메뉴</span><i class="chevron ri-arrow-down-s-line"></i></a></li>
+    </ul>
+    <div class="lnb-copyright">
+      <p class="lnb-terms">이용약관</p>
+      <p>Copyright &copy; DONGKUKCM CO All Rights reserved.</p>
+    </div>
+  </nav>
+
+  <!-- 우측 : 헤더 + 콘텐츠 -->
+  <div class="main">
+    <header class="header header--right-only">
+      <div class="header-right">
+        <div class="user"><strong>동국씨엠 안전관리자</strong>님 환영합니다.</div>
+        <div class="icons">
+          <i class="ri-notification-3-line"></i>
+          <i class="ri-edit-line"></i>
+          <i class="ri-star-line"></i>
+          <i class="ri-logout-box-r-line"></i>
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="page-heading">
+        <h1 class="page-title">이행 현황(INDEX)</h1>
+        <div class="page-breadcrumb"><span class="page-breadcrumb-home"><i class="ri-home-4-line"></i>HOME</span> <i class="ri-arrow-right-s-line"></i> 중대재해처벌법 이행 <i class="ri-arrow-right-s-line"></i> 이행 현황(INDEX)</div>
+      </div>
+
+      <div class="filter-panel">
+        <div class="filter-item">
+          <label>해당사업장</label>
+          <div class="dropdown" id="siteFilterDropdown">
+            <div class="select-box">전체<i class="ri-arrow-down-s-line"></i></div>
+            <ul class="dropdown-menu">
+              <li class="active">전체</li>
+              <li>본사</li>
+              <li>부산공장</li>
+              <li>도성센터</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>년도</label>
+          <div class="dropdown" id="yearDropdown">
+            <div class="select-box">2025<i class="ri-arrow-down-s-line"></i></div>
+            <ul class="dropdown-menu">
+              <li class="active">2025</li>
+              <li>2024</li>
+              <li>2023</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-panel-actions">
+          <button class="btn btn--ghost"><i class="ri-refresh-line"></i>초기화</button>
+          <button class="btn btn--secondary btn--wide"><i class="ri-search-line"></i>검색</button>
+        </div>
+      </div>
+
+      <div class="card card-hstatus">
+        <div class="card-title">팀별 상세조회</div>
+        <div class="hstatus-wrap">
+          <table class="data-table data-table--wide">
+            <thead>
+              <tr>
+                <th rowspan="2" colspan="3">구분</th>
+                <th colspan="5">도금생산팀</th>
+                <th colspan="5">냉연생산팀</th>
+                <th colspan="5">00팀</th>
+              </tr>
+              <tr>
+                <th>전년도 실적</th><th>연간실적</th><th>증감<br>(전년도-연간)</th><th>전월실적<br>(전월말일기준)</th><th>당월실적</th>
+                <th>전년도 실적</th><th>연간실적</th><th>증감<br>(전년도-연간)</th><th>전월실적<br>(전월말일기준)</th><th>당월실적</th>
+                <th>전년도 실적</th><th>연간실적</th><th>증감<br>(전년도-연간)</th><th>전월실적<br>(전월말일기준)</th><th>당월실적</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="3" class="hstatus-lv1">산업재해</th>
+                <th colspan="2" class="hstatus-lv2">A급</th>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend">-</span></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend">-</span></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend">-</span></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="2" class="hstatus-lv2">B급</th>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend"><span class="trend-arrow trend-arrow--up">▲</span>0건</span></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend"><span class="trend-arrow trend-arrow--up">▲</span>0건</span></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend"><span class="trend-arrow trend-arrow--up">▲</span>0건</span></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="2" class="hstatus-lv2">C급</th>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend"><span class="trend-arrow trend-arrow--down">▼</span></span></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend"><span class="trend-arrow trend-arrow--down">▼</span></span></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적</td><td><span class="trend"><span class="trend-arrow trend-arrow--down">▼</span></span></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th rowspan="4" class="hstatus-lv1">종사자의견청취</th>
+                <th rowspan="2" class="hstatus-lv2">안전신문고</th>
+                <th class="hstatus-lv3">발굴</th>
+                <td>발굴</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>발굴</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>발굴</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th class="hstatus-lv3">개선</th>
+                <td>개선</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>개선</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>개선</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="2" class="hstatus-lv2">산안위-시정지시</th>
+                <td>시정건수</td><td>완료건수(개선율)</td><td></td><td></td><td></td>
+                <td>시정건수</td><td>완료건수(개선율)</td><td></td><td></td><td></td>
+                <td>시정건수</td><td>완료건수(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="2" class="hstatus-lv2">협의체-시정지시</th>
+                <td>시정건수</td><td>완료건수(개선율)</td><td></td><td></td><td></td>
+                <td>시정건수</td><td>완료건수(개선율)</td><td></td><td></td><td></td>
+                <td>시정건수</td><td>완료건수(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="3" class="hstatus-lv1">경고장 - 시정지시</th>
+                <td>전년도 실적</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>전년도 실적</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th rowspan="4" class="hstatus-lv1">위험성평가</th>
+                <th colspan="2" class="hstatus-lv2">정기</th>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="2" class="hstatus-lv2">수시</th>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th rowspan="2" class="hstatus-lv2">중요위험</th>
+                <th class="hstatus-lv3">발굴</th>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th class="hstatus-lv3">개선</th>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>-</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="3" class="hstatus-lv1">안전작업표준</th>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="3" class="hstatus-lv1">교육</th>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th colspan="3" class="hstatus-lv1">비상훈련</th>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <th rowspan="2" class="hstatus-lv1">예산</th>
+                <th colspan="2" class="hstatus-lv2">투자</th>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td>-</td><td>-</td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td>-</td><td>-</td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td>-</td><td>-</td>
+              </tr>
+              <tr>
+                <th colspan="2" class="hstatus-lv2">비용(인건비 제외)</th>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td>-</td><td>-</td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td>-</td><td>-</td>
+                <td>연간목표</td><td>연간누적(개선율)</td><td></td><td>-</td><td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
