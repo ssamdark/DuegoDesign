@@ -132,26 +132,22 @@
               <div class="disaster-icon-item">
                 <div class="grade-icon"><img src="img/ico_main_mydo01.png" alt="총건수"></div>
                 <div class="grade-label">총건수</div>
-                <div class="grade-num-row"><span class="grade-num">12</span><i class="ri-arrow-up-line grade-trend grade-trend--up"></i></div>
-                <div class="grade-prev">전년 <strong>10</strong></div>
+                <div class="grade-num-row"><span class="grade-num">12</span><span class="grade-trend-box"><i class="ri-arrow-up-line grade-trend grade-trend--up"></i><span class="grade-prev"><strong>10</strong></span></span></div>
               </div>
               <div class="disaster-icon-item">
                 <div class="grade-icon"><img src="img/ico_main_mydo02.png" alt="A급"></div>
                 <div class="grade-label">A급</div>
-                <div class="grade-num-row"><span class="grade-num">4</span><i class="ri-arrow-up-line grade-trend grade-trend--up"></i></div>
-                <div class="grade-prev">전년 <strong>3</strong></div>
+                <div class="grade-num-row"><span class="grade-num">4</span><span class="grade-trend-box"><i class="ri-arrow-up-line grade-trend grade-trend--up"></i><span class="grade-prev"><strong>3</strong></span></span></div>
               </div>
               <div class="disaster-icon-item">
                 <div class="grade-icon"><img src="img/ico_main_mydo03.png" alt="B급"></div>
                 <div class="grade-label">B급</div>
-                <div class="grade-num-row"><span class="grade-num">5</span><i class="ri-arrow-down-line grade-trend grade-trend--down"></i></div>
-                <div class="grade-prev">전년 <strong>6</strong></div>
+                <div class="grade-num-row"><span class="grade-num">5</span><span class="grade-trend-box"><i class="ri-arrow-down-line grade-trend grade-trend--down"></i><span class="grade-prev"><strong>6</strong></span></span></div>
               </div>
               <div class="disaster-icon-item">
                 <div class="grade-icon"><img src="img/ico_main_mydo04.png" alt="C급"></div>
                 <div class="grade-label">C급</div>
-                <div class="grade-num-row"><span class="grade-num">6</span><i class="ri-arrow-up-line grade-trend grade-trend--up"></i></div>
-                <div class="grade-prev">전년 <strong>4</strong></div>
+                <div class="grade-num-row"><span class="grade-num">6</span><span class="grade-trend-box"><i class="ri-arrow-up-line grade-trend grade-trend--up"></i><span class="grade-prev"><strong>4</strong></span></span></div>
               </div>
             </div>
             <div class="disaster-rate-box">
@@ -161,8 +157,6 @@
                 <div class="disaster-rate-value">12%</div>
                 <div class="disaster-rate-value">12%</div>
               </div>
-            </div>
-            <div class="disaster-rate-box">
               <div class="disaster-rate-row">
                 <div class="disaster-rate-label">강도율</div>
                 <div class="disaster-rate-value">12%</div>
@@ -173,68 +167,88 @@
           </div>
         </div>
 
-        <div class="content-test-row">
-          <div class="card card-budget">
-            <div class="budget-header">
-              <div class="card-title">안전보건 예산</div>
-              <div class="budget-unit">단위 : 백만원</div>
+          <div class="panel card-budget">
+            <div class="panel-title-row">
+              <div class="panel-title">안전보건 예산</div>
             </div>
-            <div class="budget-cols">
-              <div class="budget-col">
-                <div class="budget-col-title">계획</div>
-                <div class="budget-col-row"><span class="budget-col-label">투자</span><strong>11</strong>백만원</div>
-                <div class="budget-col-row"><span class="budget-col-label">비용</span><strong>232</strong>백만원</div>
-              </div>
-              <div class="budget-col">
-                <div class="budget-col-title">실적</div>
-                <div class="budget-col-row"><span class="budget-col-label">투자</span><strong>0</strong>백만원</div>
-                <div class="budget-col-row"><span class="budget-col-label">비용</span><strong>0</strong>백만원</div>
-              </div>
-              <div class="budget-col">
-                <div class="budget-col-title">집행율</div>
-                <div class="budget-col-row"><span class="budget-col-label">투자</span><strong>0.0%</strong></div>
-                <div class="budget-col-row"><span class="budget-col-label">비용</span><strong>0.0%</strong></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card card-notice">
-            <div class="card-title">공지사항</div>
-            <div class="notice-featured-col">
-              <div class="notice-featured-row">
-                <div class="notice-date-badge"><span class="notice-day">10</span><span class="notice-ym">25.04</span></div>
-                <div class="notice-featured-body">
-                  <div class="notice-featured-title">2024년 교육 수료 진행 공지</div>
-                  <div class="notice-featured-desc">안녕하세요, 2024년 교육이 모두 수료됩니다. 11월 15일이 수료날짜 이며 이후 모든 일정이 삭제되니 이점 양해 부탁드립니다.</div>
+            <div class="panel-body">
+              <div class="budget-cols">
+                <div class="budget-col-wrap">
+                  <div class="budget-col-title">계획</div>
+                  <div class="budget-col">
+                    <div class="budget-col-row"><span class="budget-col-label">투자</span><strong>11</strong>백만원</div>
+                    <div class="budget-col-row"><span class="budget-col-label">비용</span><strong>232</strong>백만원</div>
+                  </div>
+                </div>
+                <div class="budget-col-wrap">
+                  <div class="budget-col-title">실적</div>
+                  <div class="budget-col">
+                    <div class="budget-col-row"><span class="budget-col-label">투자</span><strong>0</strong>백만원</div>
+                    <div class="budget-col-row"><span class="budget-col-label">비용</span><strong>0</strong>백만원</div>
+                  </div>
+                </div>
+                <div class="budget-col-wrap">
+                  <div class="budget-col-title">집행율</div>
+                  <div class="budget-col">
+                    <div class="budget-col-row"><span class="budget-col-label">투자</span><strong>0.0%</strong></div>
+                    <div class="budget-col-row"><span class="budget-col-label">비용</span><strong>0.0%</strong></div>
+                  </div>
                 </div>
               </div>
-              <div class="notice-divider"></div>
-              <div class="notice-plain-row"><span class="notice-plain-date">25.04.03</span><span class="notice-plain-text">2025년 하반기 안전보건활동현황 안내문</span></div>
-              <div class="notice-plain-row"><span class="notice-plain-date">25.03.20</span><span class="notice-plain-text">안전보건 관리규정 개정 안내</span></div>
             </div>
           </div>
 
-          <div class="card card-schedule2">
-            <div class="schedule-header">
-              <div class="card-title">안전환경 주요일정</div>
-              <a class="schedule-link" href="#">등록<i class="ri-arrow-right-s-line"></i></a>
+          <div class="panel card-notice">
+            <div class="panel-title-row">
+              <div class="panel-title">공지사항</div>
             </div>
-            <div class="schedule-grid">
-              <div class="schedule-card">
-                <div class="schedule-card-site">부산공장</div>
-                <div class="schedule-card-title">근로자 상반기 건강검진</div>
-                <div class="schedule-card-range">(7/1~11/30)</div>
-                <button class="schedule-card-arrow"><i class="ri-arrow-right-s-line"></i></button>
-              </div>
-              <div class="schedule-card">
-                <div class="schedule-card-site">본사</div>
-                <div class="schedule-card-title">사업장 정기 안전검사</div>
-                <div class="schedule-card-range">(5/20~6/30)</div>
-                <button class="schedule-card-arrow"><i class="ri-arrow-right-s-line"></i></button>
+            <div class="panel-body">
+              <div class="notice-featured-col">
+                <div class="notice-featured-row">
+                  <div class="notice-date-badge"><span class="notice-day">07</span><span class="notice-ym">26.07</span></div>
+                  <div class="notice-featured-body">
+                    <div class="notice-featured-title">2026년 교육 수료 진행 공지</div>
+                    <div class="notice-featured-desc">안녕하세요, 2026년 교육이 모두 수료됩니다. 수료 날짜는 6월 15일이며 이후 모든 일정이...</div>
+                  </div>
+                </div>
+                <div class="notice-divider"></div>
+                <div class="notice-plain-row"><span class="notice-plain-date">26.07.03</span><span class="notice-plain-text">2026년 하반기 안전보건활동현황 안내문</span></div>
+                <div class="notice-plain-row"><span class="notice-plain-date">26.06.20</span><span class="notice-plain-text">안전보건 관리규정 개정 안내</span></div>
+                <div class="notice-plain-row"><span class="notice-plain-date">26.06.04</span><span class="notice-plain-text">비상 대응 절차 및 매뉴얼 배포</span></div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div class="panel card-schedule2">
+            <div class="panel-title-row">
+              <div class="panel-title">안전환경 주요일정</div>
+              <a class="schedule-link" href="#">등록<i class="ri-arrow-right-s-line"></i></a>
+            </div>
+            <div class="panel-body">
+              <div class="schedule-grid">
+                <div class="schedule-card">
+                  <div class="schedule-card-title">건강검진</div>
+                  <div class="schedule-card-title">06.15</div>
+                  <button class="schedule-card-arrow"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+                <div class="schedule-card">
+                  <div class="schedule-card-title">안전검사</div>
+                  <div class="schedule-card-title">07.20</div>
+                  <button class="schedule-card-arrow"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+                <div class="schedule-card">
+                  <div class="schedule-card-title">작업허가서</div>
+                  <div class="schedule-card-title">08.10</div>
+                  <button class="schedule-card-arrow"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+                <div class="schedule-card">
+                  <div class="schedule-card-title">정기 위험성평가</div>
+                  <div class="schedule-card-title">09.05</div>
+                  <button class="schedule-card-arrow"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <div class="content-row-2col">
           <div class="card card-disaster">
@@ -252,10 +266,6 @@
                   <tr><th>기타</th><td>3</td><td>1</td><td>0</td><td>4</td></tr>
                   <tr><th>부산공장</th><td>6</td><td>6</td><td>0</td><td>12</td></tr>
                   <tr><th>수처리실</th><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-                  <tr><th>1EGL</th><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-                  <tr><th>2CGL</th><td>8</td><td>0</td><td>0</td><td>8</td></tr>
-                  <tr><th>2EGL</th><td>4</td><td>0</td><td>0</td><td>4</td></tr>
-                  <tr><th>2R/SHOP</th><td>14</td><td>0</td><td>0</td><td>14</td></tr>
                 </tbody>
               </table>
             </div>
@@ -279,10 +289,6 @@
                   <tr><td>05-15</td><td>FCL 인쇄기실</td><td>Appsteel생산팀</td><td>절단, 베임, 찔림</td></tr>
                   <tr><td>05-08</td><td>2문 앞 도로</td><td>Luxteel생산팀</td><td>부딧힘</td></tr>
                   <tr><td>04-30</td><td>3공장 지하 주차장</td><td>안전팀</td><td>미끄러짐</td></tr>
-                  <tr><td>04-22</td><td>원료창고 2층</td><td>생산1팀</td><td>화상</td></tr>
-                  <tr><td>04-15</td><td>5공장 지붕</td><td>시설팀</td><td>추락</td></tr>
-                  <tr><td>04-10</td><td>본관 계단</td><td>총무팀</td><td>미끄러짐</td></tr>
-                  <tr><td>04-02</td><td>물류센터 하치장</td><td>물류팀</td><td>부딧힘</td></tr>
                 </tbody>
               </table>
             </div>
@@ -419,26 +425,28 @@
           </div>
         </div>
 
-        <div class="card card-schedule">
-            <div class="schedule-header">
-              <div class="card-title">무재해일수</div>
+        <div class="panel card-schedule">
+            <div class="panel-title-row">
+              <div class="panel-title">무재해일수</div>
               <a class="schedule-link" href="#">등록<i class="ri-arrow-right-s-line"></i></a>
             </div>
-            <div class="noaccident-list">
-              <div class="noaccident-row">
-                <div class="noaccident-site">본사</div>
-                <div class="noaccident-days">183<span class="unit">일</span></div>
-                <div class="noaccident-target">목표 500일</div>
-              </div>
-              <div class="noaccident-row">
-                <div class="noaccident-site">부산공장</div>
-                <div class="noaccident-days">126<span class="unit">일</span></div>
-                <div class="noaccident-target">목표 500일</div>
-              </div>
-              <div class="noaccident-row">
-                <div class="noaccident-site">도성센터</div>
-                <div class="noaccident-days">104<span class="unit">일</span></div>
-                <div class="noaccident-target">목표 500일</div>
+            <div class="panel-body">
+              <div class="noaccident-list">
+                <div class="noaccident-row">
+                  <div class="noaccident-site">본사</div>
+                  <div class="noaccident-days">183<span class="unit">일</span></div>
+                  <div class="noaccident-target">목표 500일</div>
+                </div>
+                <div class="noaccident-row">
+                  <div class="noaccident-site">부산공장</div>
+                  <div class="noaccident-days">126<span class="unit">일</span></div>
+                  <div class="noaccident-target">목표 500일</div>
+                </div>
+                <div class="noaccident-row">
+                  <div class="noaccident-site">도성센터</div>
+                  <div class="noaccident-days">104<span class="unit">일</span></div>
+                  <div class="noaccident-target">목표 500일</div>
+                </div>
               </div>
             </div>
           </div>
