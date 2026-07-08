@@ -270,15 +270,17 @@ html, body { width: 100%; min-height: 100vh; color: var(--color-gray-900); }
 .bar--blue { background: var(--color-primary-800); }
 .bar--orange { background: #f5a623; }
 
-/* 안전작업표준 / 시정지시현황 : Traffic Source 참고 이미지 톤(남색+시안) */
-.card-safestandard .bar--blue,
+/* 시정지시현황 : Traffic Source 참고 이미지 톤(남색+시안) */
 .card-corrective .bar--blue { background: var(--color-primary-700); }
-.card-safestandard .bar--orange,
 .card-corrective .bar--orange { background: #22b8f0; }
-.card-safestandard .legend-dot--blue,
 .card-corrective .legend-dot--blue { background: var(--color-primary-700); }
-.card-safestandard .legend-dot--orange,
 .card-corrective .legend-dot--orange { background: #22b8f0; }
+
+/* 안전작업표준 : 핑크 + 퍼플 톤 */
+.card-safestandard .bar--blue { background: #7b7ff0; }
+.card-safestandard .bar--orange { background: #ec5f9e; }
+.card-safestandard .legend-dot--blue { background: #7b7ff0; }
+.card-safestandard .legend-dot--orange { background: #ec5f9e; }
 
 /* 안전신문고 : 보라색 톤 */
 .card-airemission .bar--blue { background: #9b4fd1; }
